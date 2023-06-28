@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orange;
+    color: black;
+}
+
+.textHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.containerHome {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: .3s;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    border-color: black;
+}
+
+.btnHome {
+    border: none;
+    outline: none;
+    background: orange;
+    color: white;
+    border-radius: 10px;
+    max-width: 120px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btnHome:hover {
+    background: black;
+    color: white;
+}
+
+@media(max-width: 969px) {
+    section {
+        padding: 0 0px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .card {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media(max-width: 600px) {
+    .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.none {
+    text-decoration: none;
+}
+
+.social-media {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-end;
+    justify-items: flex-end;
+    gap: 10px;
+}
+
+.social-icon {
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.45rem;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.social-icon:hover {
+    color: #4481eb;
+    border-color: #4481eb;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.github {
+    grid-row: 1;
+}
+
+.twitter {
+    grid-row: 1;
+}
+
+.instagram {
+    grid-row: 2;
+}
+
+.linkedin {
+    grid-row: 2;
+}
