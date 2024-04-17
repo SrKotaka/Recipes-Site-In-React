@@ -1,0 +1,6 @@
+cd Recipes-Site-In-React
+npm install
+npm install react-router-dom
+npm install @fortawesome/react-fontawesome
+npm install @fortawesome/free-brands-svg-icons
+npm run dev
